@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digi Mosque</title>
+  <title>DigiMosque</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -27,13 +27,15 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
+  <link rel="icon" href="dist/img/logoMasjid.png">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Preloader -->
+  <!-- preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="dist/img/logoMasjid.png" alt="DigiMosque" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -177,9 +179,9 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/logoMasjid.png" alt="logo masjid" class="brand-image img-circle elevation-3" style="opacity: 10">
-      <span class="brand-text font-weight-light">Digi mosque</span>
+    <a href="../frontend/home.html" class="brand-link">
+      <img src="dist/img/logoMasjid.png" alt="DigiMosque" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">DigiMosque</span>
     </a>
 
     <!-- Sidebar -->
@@ -187,10 +189,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/iconKlmpk.jpg" class="icon kelompok" alt="User Image" style="border-radius: 100px;">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Kelompok 1 SI-06</a>
+          <a href="#" class="d-block">Kelompok 1 SI-6</a>
           <i class></i>
         </div>
       </div>
@@ -213,14 +215,14 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-                <a href="kelola_masjid.html" class="nav-link active">
+                <a href="kelola-masjid.html" class="nav-link active">
                   <i class="nav-icon fa-solid fa-gear"></i></i>
                   <p>
                     Kelola Masjid
                   </p>
                 </a>
               </li><li class="nav-item">
-                <a href="tambah_masjid.html" class="nav-link active">
+                <a href="tambah-masjid.html" class="nav-link active">
                   <i class="nav-icon fa fa-square-plus"></i>
                   <p>
                     Tambah Masjid
@@ -251,128 +253,220 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Kelola Berita</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Kelola Berita</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
     <!-- /.content-header -->
 
     <!-- Main content -->
     <section>
-      <div class="container-fluid">
-        <div class="row pt-2">
-          <div class="col-md-12">
-            <h3>
-              <center>
-              <strong>Admin - Direktori Data Mesjid Kota Depok</strong>
-              </center>
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-          </div>
-          <div class="col-md-4 pt-3 pb-4">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary ml-1" type="submit">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <h3>
-              Form Berita
-            </h3>
-          </div>
-          <div class="col-md-4">
-            <nav>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                  <a href="#">Admin</a>
-                </li>
-                <li class="breadcrumb-item active">
-                  Kelola Masjid
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <form>
-              <div class="form-group row">
-                <label for="text" class="col-4 col-form-label">Nama Masjid</label> 
-                <div class="col-8">
-                  <input id="text" name="text" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="text1" class="col-4 col-form-label">Judul Berita</label> 
-                <div class="col-8">
-                  <input id="text1" name="text1" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="textarea" class="col-4 col-form-label">Isi Berita</label> 
-                <div class="col-8">
-                  <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="text2" class="col-4 col-form-label">Penulis</label> 
-                <div class="col-8">
-                  <input id="text2" name="text2" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="text3" class="col-4 col-form-label">Tanggal Terbit</label> 
-                <div class="col-8">
-                  <div class="input-group">
-                    <input id="text3" name="date3" type="date" class="form-control"> 
-                    <div class="input-group-append">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-4">Status Berita</label> 
-                <div class="col-8">
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Draft"> 
-                    <label for="checkbox_0" class="custom-control-label">Draft</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Submit"> 
-                    <label for="checkbox_1" class="custom-control-label">Submit</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Review"> 
-                    <label for="checkbox_2" class="custom-control-label">Review</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="checkbox" id="checkbox_3" type="checkbox" class="custom-control-input" value="Reject"> 
-                    <label for="checkbox_3" class="custom-control-label">Reject</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="checkbox" id="checkbox_4" type="checkbox" class="custom-control-input" value="Approve"> 
-                    <label for="checkbox_4" class="custom-control-label">Approve</label>
-                  </div>
-                </div>
-              </div> 
-              <div class="form-group row">
-                <div class="offset-4 col-8">
-                  <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
-                  <button name="submit" type="submit" class="btn btn-primary">Update</button>
-                  <button name="submit" type="submit" class="btn btn-primary">Hapus</button>
-                </div>
-              </div>
-            </form>
-          </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <center><h2>
+            <b>Admin - Direktori Data Mesjid Kota Depok</b>
+          </h2></center>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4 mb-2">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                &nbsp;&nbsp; <a href="#">Login</a>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="padding: 30px;">
+          <h2><B><u>
+            Daftar Berita
+          </u></B></h2>
+          <br>
+        </div>
+        <div class="col-md-4">
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Admin</a>
+              </li>
+              <li class="breadcrumb-item active">
+                Kelola Masjid
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  No
+                </th>
+                <th>
+                  Tanggal
+                </th>
+                <th>
+                  Judul Berita
+                </th>
+                <th>
+                  Mesjid
+                </th>
+                <th>
+                  Penulis
+                </th>
+                <th>
+                  Status
+                </th>
+                <th>
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  1
+                </td>
+                <td>
+                  1 Januari 2023
+                </td>
+                <td>
+                  Peresmian Masjid
+                </td>
+                <td>
+                  Jami Al-Mujahidin
+                </td>
+                <td>
+                  Bang Andi
+                </td>
+                <td>
+                  Draft
+                </td>
+                <td>
+                  Detail | Edit | Delete
+                </td>
+              </tr>
+              <tr class="table-active">
+                <td>
+                  2
+                </td>
+                <td>
+                  5 Januari 2023
+                </td>
+                <td>
+                  Laporan Keuangan
+                </td>
+                <td>
+                  Masjid Ilhami
+                </td>
+                <td>
+                  Bang Ismail
+                </td>
+                <td>
+                  Review
+                </td>
+                <td>
+                  Detail | Edit | Delete
+                </td>
+              </tr>
+              <tr class="table-success">
+                <td>
+                  3
+                </td>
+                <td>
+                  6 Januari 2023
+                </td>
+                <td>
+                  Donasi Bencana
+                </td>
+                <td>
+                  Masjid Dian Al-Mahri (Kubah Emas)
+                </td>
+                <td>
+                  Bang Ahmad
+                </td>
+                <td>
+                  Submit
+                </td>
+                <td>
+                  Detail | Edit | Delete
+                </td>
+              </tr>
+              <tr class="table-warning">
+                <td>
+                  4
+                </td>
+                <td>
+                  8 Januari 2023
+                </td>
+                <td>
+                  Peresmian Masjid
+                </td>
+                <td>
+                  Masjid At-Thohir
+                </td>
+                <td>
+                  Bang Hilman
+                </td>
+                <td>
+                  Reject
+                </td>
+                <td>
+                  Detail | Edit | Delete
+                </td>
+              </tr>
+              <tr class="table-danger">
+                <td>
+                  5
+                </td>
+                <td>
+                  16 Januari 2023
+                </td>
+                <td>
+                  Pembangunan Masjid
+                </td>
+                <td>
+                  Masjid Jami Al-Huda
+                </td>
+                <td>
+                  Bang Dimas
+                </td>
+                <td>
+                  Approve
+                </td>
+                <td>
+                  Detail | Edit | Delete
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -425,4 +519,4 @@
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/pages/dashboard.js"></script>
 </body>
-</html>
+</html
